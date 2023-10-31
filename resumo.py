@@ -7,7 +7,7 @@ import plotly.express as px
 class Resumo:
     # Construtor da classe ler os dados
     def __init__(self):
-        self.df = pd.read_csv('assets\Cursos - Página1.csv')
+        self.df = pd.read_csv('assets\Curso.csv')
 
 
 
