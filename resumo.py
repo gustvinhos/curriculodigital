@@ -199,8 +199,8 @@ class Resumo:
         
 
         print(self.df.head())
-        area_courses = self.df['Ferramenta'].value_counts()
-        area_courses = area_courses.groupby('Ferramenta').sum()
+        area_courses = self.df['ferramenta'].value_counts()
+        area_courses = area_courses.groupby('ferramenta').sum()
 
         #ordenar por quantidade de cursos
         area_courses = area_courses.sort_values(ascending=True, inplace=False, kind='quicksort', na_position='last', ignore_index=False, key=None)
@@ -210,7 +210,7 @@ class Resumo:
 
 
         
-        st.plotly_chart(px.bar(area_courses, orientation='h', title='Ferramentas com mais cursos', labels={'value':'', 'Ferramenta':""}), use_container_width=True,)
+        st.plotly_chart(px.bar(area_courses, orientation='h', title='Ferramentas com mais cursos', labels={'value':'', 'ferramenta':""}), use_container_width=True,)
 
                     
                 
