@@ -68,11 +68,9 @@ with col2:
             mime="application/octet-stream",
         )
     with col21:
-    st.write("""
-        <div>
-            <button onclick="window.open('https://www.linkedin.com/in/thiagoreisaraujo/', '_blank')">Abrir LinkedIn</button>
-        </div>
-    """, unsafe_allow_html=True)
+    if st.button("Linkedin"):
+        linkedin_url = "https://www.linkedin.com/in/thiagoreisaraujo/"
+        webbrowser.open_new_tab(linkedin_url)
 
     st.write("📫", EMAIL)
 
