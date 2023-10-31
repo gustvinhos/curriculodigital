@@ -198,7 +198,7 @@ class Resumo:
     def bar_chart_areatools(self):
         
 
-        self.df.head()
+        print(self.df.head())
         area_courses = self.df['Ferramenta'].value_counts()
         area_courses = area_courses.groupby('Ferramenta').sum()
 
