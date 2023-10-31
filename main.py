@@ -68,9 +68,11 @@ with col2:
             mime="application/octet-stream",
         )
     with col21:
-        if st.button("Linkedin"):
-            linkedin_url = "https://www.linkedin.com/in/thiagoreisaraujo/"
-            st.markdown(f"[Abrir perfil do LinkedIn]({linkedin_url})")
+    st.write("""
+        <div>
+            <button onclick="window.open('https://www.linkedin.com/in/thiagoreisaraujo/', '_blank')">Abrir LinkedIn</button>
+        </div>
+    """, unsafe_allow_html=True)
 
     st.write("📫", EMAIL)
 
