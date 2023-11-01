@@ -68,9 +68,13 @@ with col2:
             mime="application/octet-stream",
         )
     with col21:
-        if st.button("Linkedin"):
+        def open_linkedin():
             linkedin_url = "https://www.linkedin.com/in/thiagoreisaraujo/"
             webbrowser.open_new_tab(linkedin_url)
+        
+        # Crie a interface do usuário com o botão
+        if st.button("Linkedin"):
+            open_linkedin()
 
     st.write("📫", EMAIL)
 
