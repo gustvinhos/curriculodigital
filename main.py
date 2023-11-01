@@ -14,7 +14,7 @@ css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.png"
 
-
+linkedin_url = 'https://www.linkedin.com/in/thiagoreisaraujo'
 # --- GENERAL SETTINGS ---
 PAGE_TITLE = "Digital CV | Thiago Reis"
 PAGE_ICON = ":wave:"
@@ -69,14 +69,7 @@ with col2:
             mime="application/octet-stream",
         )
     with col21:
-        def open_linkedin():
-            linkedin_url = "https://www.linkedin.com/in/thiagoreisaraujo/"
-           
-            
-        
-        # Crie a interface do usuário com o botão
-        if st.button("Linkedin"):
-            open_linkedin()
+        pass
 
     st.write("📫", EMAIL)
 
