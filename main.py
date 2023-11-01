@@ -54,6 +54,7 @@ with open(resume_file, "rb") as pdf_file:
 col1, col2 = st.columns(2)
 with col1:
     st.image(profile_pic, width=230)
+    st.markdown(f'<a href="{linkedin_url}" target="_blank">Clique aqui para abrir o LinkedIn</a>', unsafe_allow_html=True)
 
 with col2:
     st.title(NAME)
@@ -71,7 +72,7 @@ with col2:
         def open_linkedin():
             linkedin_url = "https://www.linkedin.com/in/thiagoreisaraujo/"
            
-            st.markdown(f'<a href="{linkedin_url}" target="_blank">Clique aqui para abrir o LinkedIn</a>', unsafe_allow_html=True)
+            
         
         # Crie a interface do usuário com o botão
         if st.button("Linkedin"):
