@@ -71,7 +71,7 @@ with col2:
         def open_linkedin():
             linkedin_url = "https://www.linkedin.com/in/thiagoreisaraujo/"
            
-            a = f'<a href="{linkedin_url}" target="_blank">Clique aqui para abrir o LinkedIn</a>'
+            st.markdown(f'<a href="{linkedin_url}" target="_blank">Acesse meu LinkedIn</a>')
         
         # Crie a interface do usuário com o botão
         if st.button("Linkedin"):
