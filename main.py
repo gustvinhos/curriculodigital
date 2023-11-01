@@ -70,7 +70,8 @@ with col2:
     with col21:
         def open_linkedin():
             linkedin_url = "https://www.linkedin.com/in/thiagoreisaraujo/"
-            webbrowser.open_new_tab(linkedin_url)
+           
+            a = f'<a href="{linkedin_url}" target="_blank">Clique aqui para abrir o LinkedIn</a>'
         
         # Crie a interface do usuário com o botão
         if st.button("Linkedin"):
